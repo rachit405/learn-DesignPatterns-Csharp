@@ -1,14 +1,15 @@
 // Solid Principles in C# with code examples
 
 /* 
-Single responsibility Principle
+Single Responsibility Principle
 
 A class should have only one reason to change, meaning it should only have one responsibility.
 
 A class responsible for representing data should only have the responsibility of holding the data. 
 It should not be responsible for saving the data to a database or performing any other unrelated tasks.
 
-By having a single responsibility, a class becomes more cohesive and easier to maintain. It also makes the application more flexible, as changes to one responsibility do not impact other responsibilities.
+By having a single responsibility, a class becomes more cohesive and easier to maintain. 
+It also makes the application more flexible, as changes to one responsibility do not impact other responsibilities.
 
 The Single Responsibility Principle states that a module should have only one reason to change.
 */
@@ -24,7 +25,7 @@ public class Invoice {
         // generates an invoice 
     }
     // This breaks the single responsibility principle as the class has more than one responsibility
-    // Generating and saving the invoice to DB; In this case we should have another class be responsible for save
+    // Generating and saving the invoice to DB; In this case, we should have another class be responsible for save
     public bool SaveInvoiceToDataBase(Invoice invoice){
         // Save invoice to DB
     }
@@ -38,7 +39,7 @@ Open-Close Principle
 The Open-closed principle states that software entities (classes, methods, functions, etc.) 
 should be open for extension but closed for modification.
 
-You should design a class or a method in such a way that you can extend its behavior without directly modifying the existing source code.
+You should design a class or a method in such a way that you can extend its behaviour without directly modifying the existing source code.
 
 Open for extension but closed for modification
 
@@ -186,7 +187,7 @@ public class Car1 : IVehicle
     }
 }
 
-// This is the voilation of Interface Segregation Principle
+// This is a violation of the Interface Segregation Principle
 
 public interface IFlyable
 {
