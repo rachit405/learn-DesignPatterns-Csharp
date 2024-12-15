@@ -30,7 +30,9 @@ internal class Program
         //SumOfAllElements(arr);
 
         //7.  How to remove duplicate characters from a string
-        RemoveDuplicateChar("aabbccdd");
+        //RemoveDuplicateChar("aabbccdd");
+
+        //8.
 
     }
 
